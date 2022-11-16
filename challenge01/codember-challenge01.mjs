@@ -21,11 +21,10 @@ const run = async () => {
 
   let lastUser = output[output.length-1];
 
-  let email = lastUser.match(/(\usr:\S+\b)/ig)[0].split(':')[1];
+  let userOutput = lastUser.match(/(\usr:\S+\b)/ig)[0].split(':')[1];
 
-  console.log(`submit ${output.length}${email}`);
+  console.log(`submit ${output.length}${userOutput}`);
 
 }
-
 
 run();
